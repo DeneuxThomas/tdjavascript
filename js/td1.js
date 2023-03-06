@@ -264,54 +264,7 @@ imgs.forEach(function(img, i) {
 	});
 });
 
-
-// let btnSumbit = 0;
-// document.getElementById("sumbit-btn").addEventListener("click", btnTrue);
-// document.getElementById("sumbit-btn").addEventListener("click", search);
-
-// function btnTrue(){
-// 	btnSumbit ++;
-// 	console.log(btnSumbit);
-// }
-
-// let searchFirstTime = true;
-// let savePage = '';
-// let index = 0;
-// let dictionary = {};
-
-// function search(){
-// 	if (btnSumbit > 0){
-// 		if (searchFirstTime){
-// 			savePage = document.body.innerHTML;
-// 			searchFirstTime = false;
-
-// 		}
-// 		else {
-// 			document.body.innerHTML = savePage;
-// 		}
-// 		let textSearch = document.getElementById("text-search").value;
-
-// 		index = 0;
-// 		dictionary = {};
-
-// 		while (index < savePage.length) {
-// 			let startIndex = savePage.indexOf(textSearch, index);
-// 			if (startIndex === -1) {
-// 				break; // sortir de la boucle si le texte de recherche n'est pas trouvé
-// 			}
-
-// 			let endIndex = startIndex + textSearch.length;
-// 			dictionary[startIndex] = endIndex;
-
-// 			// Mettre à jour l'index pour commencer la recherche à partir du caractère suivant après la fin de l'occurrence actuelle
-// 			index = endIndex;
-// 		}
-// 		console.log(dictionary);
-// 	}
-
-// 	console.log(savePage);
-// }
-
+document.getElementById("search-btn").addEventListener("click",search);
 
 function search() {
 	let searchText = document.getElementById('search-input').value;
