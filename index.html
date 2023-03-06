@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Thomas DENEUX" />
+		<title>TD1 - Exercice 1</title>
+		<link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/td1.css" />
+		<script defer="defer" src="js/td1.js"></script>
+	</head>
+	<body onload="onLoad();">
+		<h1  id="title" class="firstOrLast">H1</h1>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="author" content="Thomas DENEUX" />
-	<title>TD1 - Exercice 1</title>
-	<link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="css/td1.css" />
-	<script defer="defer" src="js/td1.js"></script>
-</head>
+		<h2>H2 1</h2>
+		<h2 class="firstOrLast">H2 2</h2>
 
-<body onload="onLoad();">
-	<h1 id="title" class="firstOrLast">H1</h1>
+		<h3 class="firstOrLast">H3 1</h3>
+		<h3>H3 2</h3>
+		<h3>H3 3</h3>
 
-	<h2>H2 1</h2>
-	<h2 class="firstOrLast">H2 2</h2>
+		<div>
+			<p>je suis un premier petit <span>texte</span></p>
+		</div>
+		<div>
+			<p>je suis un deuxième petit <span>texte</span></p>
+		</div>
 
-	<h3 class="firstOrLast">H3 1</h3>
-	<h3>H3 2</h3>
-	<h3>H3 3</h3>
+		<div id="update-date"></div>
 
-	<div>
-		<p>je suis un premier petit <span>texte</span></p>
-	</div>
-	<div>
-		<p>je suis un deuxième petit <span>texte</span></p>
-	</div>
+		<p id="get-nb-days">il reste xxx
+		jours avant le 19 juillet 202X</p>
 
-	<div id="update-date"></div>
+		<p id="clock1"></p>
 
-	<p>Entrez un mot à rechercher:
-		<input type="text" id="search-input">
-		<button onclick="search()">Rechercher</button>
-	</p>
+		<p id="clock2"></p>
 
-</body>
+		<div id="graphic-clock">
+		</div>
 
+		<form>
+			<input type="text" class="white" id="inputText">
+		</form>
+
+		<aside>
+			<div class="part-1 part">
+				<div class="top">
+					<img class="aside-img" src="../TD1/assets/images/plus.gif" alt="clique">
+					<div class="info-Gen">Information Générales</div>
+				</div>
+				<div class="bottom">
+					<div><a href="#">Accueil</a></div>
+					<div><a href="#">CV</a></div>
+				</div>
+			</div>
+			<div class="part-2 part">
+				<div class="top">
+					<img class="aside-img" src="../TD1/assets/images/plus.gif" alt="clique">
+					<div class="info-Gen">Recherche</div>
+				</div>
+				<div class="bottom">
+					<div><a href="#">Activités</a></div>
+					<div><a href="#">Rayonnement Scientifique</a></div>
+					<div><a href="#">Projet en cours</a></div>
+					<div><a href="#">Anciens projets</a></div>
+					<div><a href="#">Publication</a></div>
+				</div>
+			</div>
+			<div class="part-3 part">
+				<div class="top">
+					<img class="aside-img" src="../TD1/assets/images/plus.gif" alt="clique">
+					<div class="info-Gen"><a href="#">Enseignement</a></div>
+				</div>
+				<div class="bottom">
+					<div><a href="#">Département Informatique</a></div>
+					<div><a href="#">LP SIL</a></div>
+					<div><a href="#">Polytech Nice-Sofia</a></div>
+					<div><a href="#">Autres</a></div>
+					<div><a href="#">Stages et Projets</a></div>
+				</div>
+			</div>
+			<div class="part-4 part">
+				<div class="top">
+					<img class="aside-img" src="../TD1/assets/images/plus.gif" alt="clique">
+					<div class="info-Gen">Personnel</div>
+				</div>
+				<div class="bottom">
+					<div><a href="#">Je sais pas quoi mettre dedans</a></div>
+					<div><a href="#">COUCOU</a></div>
+					<div><a href="#">test</a></div>
+				</div>
+			</div>
+			<p>Entrez un mot à rechercher:
+				<input type="text" id="search-input">
+				<button onclick="search()">Rechercher</button>
+			</p>
+			
+		</aside>
+
+	</body>
 </html>

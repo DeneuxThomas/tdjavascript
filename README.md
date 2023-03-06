@@ -25,5 +25,3 @@ balise h2 : newTitleH2[0].innerHTML
 innerHTML permet de manipuler le contenu HTML complet d'un élément
 innerText se concentrent sur le texte visible dans l'élément et ne prend pas en compte les balises HTML
 textContent se concentrent sur le texte visible dans l'élément et inclut les balise HTML mais sans le style de présentation.
-
-# td1javascript

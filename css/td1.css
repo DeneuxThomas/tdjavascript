@@ -6,6 +6,49 @@
     box-sizing: border-box;
 }
 
-select {
-    background-color: yellow;
+.white {
+    background-color: rgb(255, 255, 255);
+}
+
+.green {
+    background-color: rgb(150, 255, 150);
+}
+
+.red {
+    background-color: rgb(255, 150, 150);
+}
+
+
+aside {
+    background-color: rgb(198, 241, 255);
+    padding: 5px;
+    display: inline-block;
+}
+
+.part {
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.top {
+    display: flex;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bottom {
+    padding: 5px;
+}
+
+.aside-img {
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+aside a {
+    color: white;
 }
